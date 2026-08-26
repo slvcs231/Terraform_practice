@@ -7,8 +7,8 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "Reddi_devops_pr"
-    key    = "Reddi_devops_pr_dev"
+    bucket = "slvc31"
+    key    = "slvc31_pr_dev"
     region = "us-east-1"
     use_lockfile = true
     encrypt = true
