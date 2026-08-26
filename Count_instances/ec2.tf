@@ -4,7 +4,7 @@ resource "aws_instance" "terraform" {
   instance_type = "t3.micro"
 
   tags = {
-    Name = var.instances [count.index]
+    Name = var.instances[count.index]
     Terraform = "True"
   }
 }
