@@ -3,7 +3,7 @@ resource "aws_instance" "terraform" {
   instance_type = "t3.micro"
 
   tags = {
-    Name = "terra_pra"
+    Name = "terraform_instance"
     Terraform = "True"
   }
 }
