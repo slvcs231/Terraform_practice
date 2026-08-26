@@ -1,9 +1,11 @@
 resource "aws_instance" "terraform" {
   ami = "ami-0220d79f3f480ecf5"
+  count = 2
   instance_type = var.environment == "dev" ? "t3.micro" : "t3.medium"
 
+
   tags = {
-    Name = "terraform"
+    Name = var.instances [count.index]
     Terraform = "True"
   }
 }
