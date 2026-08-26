@@ -1,6 +1,6 @@
 resource "aws_instance" "terraform" {
   ami = "ami-0220d79f3f480ecf5"
-  count = 2
+  count = 4
   instance_type = var.environment == "dev" ? "t3.micro" : "t3.medium"
 
 
