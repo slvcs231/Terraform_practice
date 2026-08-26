@@ -1,5 +1,6 @@
 variable "environment" {
-    default = "test"  
+    default = ["dev","test","prod"]
+     
 }
 
 variable "instances" {
