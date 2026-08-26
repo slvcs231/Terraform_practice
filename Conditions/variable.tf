@@ -3,5 +3,5 @@ variable "environment" {
 }
 
 variable "instances" {
-    default = ["redis","mongodb","mysql"]  
+    default = ["redis","mongodb"]  
 }
