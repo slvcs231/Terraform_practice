@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "slvc31"
+    bucket = "slvc311"
     key    = "slvc31_pr_dev"
     region = "us-east-1"
     use_lockfile = true
